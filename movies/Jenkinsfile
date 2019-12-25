@@ -11,13 +11,11 @@ pipeline {
     }
 
     environment {
-	RHT_OCP4_DEV_USER = "matias-amado"
-	RHT_OCP4_WILDCARD_DOMAIN = "apps.ocp-na2.prod.nextcle.com"
         //TODO: Customize these variables for your environment
-        DEV_PROJECT = "${RHT_OCP4_DEV_USER}-movies-dev"
-        STAGE_PROJECT = "${RHT_OCP4_DEV_USER}-movies-stage"
-        APP_GIT_URL = "https://github.com/${RHT_OCP4_DEV_USER}/DO288-apps"
-        NEXUS_SERVER = "http://nexus-common.${RHT_OCP4_WILDCARD_DOMAIN}/repository/java"
+        DEV_PROJECT = "matias-amado-movies-dev"
+        STAGE_PROJECT = "matias-amado-movies-stage"
+        APP_GIT_URL = "https://github.com/maamado/DO288-apps"
+        NEXUS_SERVER = "http://nexus-common.apps.ocp-na2.prod.nextcle.com/repository/java"
 
         // DO NOT CHANGE THE GLOBAL VARS BELOW THIS LINE
         APP_NAME = "movies"
